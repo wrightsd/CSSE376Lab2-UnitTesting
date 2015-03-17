@@ -26,7 +26,7 @@ namespace ExpediaTest
         }
 
         [Test()]
-        [ExpectedException(typeof(InvalidOperationException))]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void TestExeptionForNegativeMiles()
         {
             new Flight(StartDate, EndDate, -4);
